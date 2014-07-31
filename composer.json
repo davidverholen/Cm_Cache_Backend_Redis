@@ -10,7 +10,6 @@
         }
     ],
     "require":{
-        "magento-hackathon/magento-composer-installer":"*",
-        "colinmollenhour/credis": "*"
+        "colinmollenhour/credis": "1.5"
     }
 }
