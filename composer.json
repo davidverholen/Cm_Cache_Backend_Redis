@@ -10,7 +10,7 @@
         }
     ],
     "require":{
-        "colinmollenhour/credis": "*",
+        "davidverholen/credis": "*",
         "firegento/psr0autoloader": "*"
     }
 }
