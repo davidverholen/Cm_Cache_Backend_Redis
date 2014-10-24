@@ -1,15 +1,16 @@
 {
-    "name":"colinmollenhour/cache-backend-redis",
+    "name":"davidverholen/cache-backend-redis",
     "type":"magento-module",
-    "license":"BSD-3-Clause",
-    "homepage":"https://github.com/colinmollenhour/Cm_Cache_Backend_Redis",
-    "description":"Zend_Cache backend using Redis with full support for tags.",
+    "license":"OSL-3.0",
+    "homepage":"https://github.com/davidverholen/Cm_Cache_Backend_Redis",
+    "description":"Fork for composer installation",
     "authors":[
         {
             "name":"Colin Mollenhour"
         }
     ],
     "require":{
-        "magento-hackathon/magento-composer-installer":"*"
+        "colinmollenhour/credis": "*",
+        "firegento/psr0autoloader": "*"
     }
 }
