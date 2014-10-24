@@ -59,7 +59,7 @@ class Cm_Cache_Backend_Redis extends Zend_Cache_Backend implements Zend_Cache_Ba
     const LUA_CLEAN_SH1 = '42ab2fe548aee5ff540123687a2c39a38b54e4a2';
     const LUA_GC_SH1 = 'c00416b970f1aa6363b44965d4cf60ee99a6f065';
 
-    /** @var Credis_Client */
+    /** @var \DavidVerholen\Credis\Client */
     protected $_redis;
 
     /** @var bool */
@@ -111,7 +111,7 @@ class Cm_Cache_Backend_Redis extends Zend_Cache_Backend implements Zend_Cache_Ba
         $port = isset($options['port']) ? $options['port'] : NULL;
         $timeout = isset($options['timeout']) ? $options['timeout'] : self::DEFAULT_CONNECT_TIMEOUT;
         $persistent = isset($options['persistent']) ? $options['persistent'] : '';
-        $this->_redis = new Credis_Client($options['server'], $port, $timeout, $persistent);
+        $this->_redis = new \DavidVerholen\Credis\Client($options['server'], $port, $timeout, $persistent);
 
         if ( isset($options['force_standalone']) && $options['force_standalone']) {
             $this->_redis->forceStandalone();
