@@ -10,6 +10,6 @@
         }
     ],
     "require":{
-        "colinmollenhour/credis": "1.5"
+        "colinmollenhour/credis": ">=1.5"
     }
 }
